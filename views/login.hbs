@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-form</title>
+
+    <style>
+        body{
+            background-color: #db3434;
+        }
+       /* Style for the container div */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style for the modal */
+.modal-content {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  display: flex; /* Added */
+  flex-direction: column; /* Added */
+  justify-content: center; /* Added */
+  align-items: center; /* Added */
+}
+
+/* Style for the modal title */
+.modal-title {
+    color: #1200ff;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 21px;
+}
+
+/* Style for the modal body */
+.modal-body {
+    padding: 10px;
+    width: 100%;
+    max-width: 22rem;
+    margin: 23px;
+    margin-left: revert;
+}
+
+/* Style for the form input labels */
+.form-label {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    color: #eb0707;
+    padding: 0rem 5px;
+}
+/* Style for the form input fields */
+.form-control {
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+    color: #333;
+    font-size: 17px;
+    padding: 13px;
+    width: 100%;
+}
+
+/* Style for the form input fields when they are in focus */
+.form-control:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+/* Style for the form input fields help text */
+.form-text {
+  color: #999;
+  font-size: 12px;
+}
+
+/* Style for the login button */
+.reg-btn {
+  background-color: #3498db;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 20px; /* Added */
+}
+
+/* Style for the login button when it's hovered over */
+.reg-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Style for the "Don't Have an Account?" text */
+.text-left {
+  color: #333;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-5">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Login to Account</h5>
+            </div>
+            <div class="modal-body">
+                <form method="POST" action="/loginPage">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" />
+                        <div id="emailHelp" class="form-text">We'll never share your email
+                            with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input name="loginpassword" type="password" class="form-control" id="exampleInputPassword1" />
+                    </div>
+                    
+                    <button class="reg-btn" name="submit" type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+            <p class="text-left ms-3">Don't Have An Account?
+                <a href="#">click here</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
